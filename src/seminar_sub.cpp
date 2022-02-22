@@ -12,7 +12,7 @@ int main(int argc, char **argv)
   ros::init(argc, argv, "seminar_sub");
   ros::NodeHandle nh;
 
-  ros::Subscriber sub = nh.subscribe("messages", 1000, chatterCallback);
+  ros::Subscriber sub = nh.subscribe("messages", 1000, chatterCallback);  //declare subscriber
 
   ros::spin(); // Function waits to receive a message.
                // When a message is received, the callback function is called.
